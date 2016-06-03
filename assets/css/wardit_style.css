@@ -1,0 +1,412 @@
+@font-face{
+	font-family: 'twcent';
+	src: url('../fonts/twcent.ttf');
+}
+
+@font-face{
+	font-family: 'agency';
+	src: url('../fonts/agency.ttf');
+}
+
+body{
+	font-family: 'agency';
+	color: #000;
+	font-size: 21px;
+}
+
+.wardit_element{
+	position: absolute;
+}
+
+.wardit_container{
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.row{
+	margin: 0px;
+}
+
+/* ------- Nav Menu -------- */
+/* ------------------------- */
+.wardit_nav_menu_container{
+	position: fixed;
+	right: 0px;
+	width: 120px;
+	height: 100%;
+	z-index: 100;
+}
+
+.wardit_nav_menu_father_container{
+	width: 100%;
+	height: 40px;
+	margin: 20px auto;
+	background-color:#fff;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px #000;
+}
+
+.wardit_menu_indicator_father{
+	background-image: url('../images/menu.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	top: 0px;
+	left: 0px;
+}
+
+.wardit_nav_menu_father_container:hover{
+	background-color: #414143;
+	color: #fff;
+}
+
+.wardit_nav_menu_father_container p{
+	text-align: center;
+	padding-top: 5px;
+	margin: 0;
+}
+
+.wardit_nav_menu_children_container:hover > 
+.wardit_nav_children_menu_blocks {
+	left: 10px;
+}
+
+.wardit_nav_children_menu_blocks{
+	cursor: pointer;
+	margin: 20px 0px;
+	width: 120px;
+	height: 37px;
+	left: 115px;
+	background-color: #fff;
+	box-shadow: -4px 5px 5px #ababab;
+	-webkit-transition: left 0.5s ;
+	-moz-transition:    left 0.5s ;
+	-o-transition:      left 0.5s ;
+	transition:         left 0.5s ;
+}
+/* ----------Menu Children Hover---------------*/
+@-webkit-keyframes ChildrenHover {
+	0%     { left: 115px; }
+	100%   { left: 10px; }
+}
+@-moz-keyframes ChildrenHover {
+	0%     { left: 115px; }
+	100%   { left: 10px; }
+}
+@-o-keyframes ChildrenHover {
+	0%     { left: 115px; }
+	100%   { left: 10px; }
+}
+@keyframes ChildrenHover {
+	0%     { left: 115px; }
+	100%   { left: 10px; }
+}
+/* --------------Menu Hover-------------------*/
+.wardit_nav_children_menu_blocks p{
+	margin-left: 20px;
+}
+
+#wardit_nav_children_menu_block_1{
+	color: #5FBA46;
+	border: 1px solid #5FBA46;
+}
+
+#wardit_nav_children_menu_block_1:hover{
+	background-color: #B1D137;
+	color: #000;
+}
+
+#wardit_nav_children_menu_block_2{
+	color: #ED8022;
+	border: 1px solid #ED8022;
+	-webkit-transition-delay: 0.1s ;
+	-moz-transition-delay:    0.1s ;
+	-o-transition-delay:      0.1s ;
+	transition-delay:         0.1s ;
+}
+
+#wardit_nav_children_menu_block_2:hover{
+	background-color: #CB5A5C;
+	color: #000;
+}
+
+#wardit_nav_children_menu_block_3{
+	color: #1E97D4;
+	border: 1px solid #1E97D4;
+	-webkit-transition-delay: 0.2s ;
+	-moz-transition-delay:    0.2s ;
+	-o-transition-delay:      0.2s ;
+	transition-delay:         0.2s ;
+}
+
+#wardit_nav_children_menu_block_3:hover{
+	background-color: #2DB5E9;
+	color: #000;
+}
+
+#wardit_nav_children_menu_block_4{
+	color: #BC1E6D;
+	border: 1px solid #BC1E6D;
+	-webkit-transition-delay: 0.3s ;
+	-moz-transition-delay:    0.3s ;
+	-o-transition-delay:      0.3s ;
+	transition-delay:         0.3s ;
+}
+
+#wardit_nav_children_menu_block_4:hover{
+	background-color: #ED4094;
+	color: #000;
+}
+
+#wardit_nav_children_menu_block_5{	
+	color: #F5B818;
+	border: 1px solid #F5B818;
+	-webkit-transition-delay: 0.4s ;
+	-moz-transition-delay:    0.4s ;
+	-o-transition-delay:      0.4s ;
+	transition-delay:         0.4s ;
+}
+
+#wardit_nav_children_menu_block_5:hover{
+	background-color: #F5B818;
+	color: #000;
+}
+
+.wardit_menu_indicator_children{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#wardit_nav_indicator_child_1{
+	background-image: url('../images/nav_1.png');
+}
+
+#wardit_nav_indicator_child_2{
+	background-image: url('../images/nav_2.png');
+}
+
+#wardit_nav_indicator_child_3{
+	background-image: url('../images/nav_3.png');
+}
+
+#wardit_nav_indicator_child_4{
+	background-image: url('../images/nav_4.png');
+}
+
+#wardit_nav_indicator_child_5{
+	background-image: url('../images/nav_5.png');
+}
+
+.wardit_menu_indicator_children{
+	background-color: red;
+	height: 35px;
+	width: 10px;
+}
+
+.wardit_nav_menu_a{
+	text-decoration: none !important;
+	color: #000;
+}
+
+/* ----- First Section ----- */
+/* ------------------------- */
+header{
+	margin-top: 10px;
+}
+
+.wit_logo_container{
+	height: 100px;
+	width: 150px;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.wardit_logo_back{
+	background-color: #fff;
+	width: 150px;
+	height: 150px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform:    rotate(45deg);
+	-o-transform:      rotate(45deg);
+	transform:         rotate(45deg);
+	border: 1px solid #c3c3c3;
+	border-radius: 10px;
+	-webkit-animation: logoShadow 10s infinite linear;
+	-moz-animation:    logoShadow 10s infinite linear;
+	-o-animation:      logoShadow 10s infinite linear;
+	animation:         logoShadow 10s infinite linear;
+}
+
+.wardit_logo{
+	background-image: url('../images/logo_new.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 150px;
+}
+
+/* --------------Logo Shadow------------------ */
+@-webkit-keyframes logoShadow {
+	0%     { box-shadow: 0px 0px 40px #000; }
+	50%    { box-shadow: 0px 0px 10px #000; }
+	100%   { box-shadow: 0px 0px 40px #000; }
+}
+@-moz-keyframes logoShadow {
+	0%     { box-shadow: 0px 0px 40px #000; }
+	50%    { box-shadow: 0px 0px 10px #000; }
+	100%   { box-shadow: 0px 0px 40px #000; }
+}
+@-o-keyframes logoShadow {
+	0%     { box-shadow: 0px 0px 40px #000; }
+	50%    { box-shadow: 0px 0px 10px #000; }
+	100%   { box-shadow: 0px 0px 40px #000; }
+}
+@keyframes logoShadow {
+	0%     { box-shadow: 0px 0px 40px #000; }
+	50%    { box-shadow: 0px 0px 10px #000; }
+	100%   { box-shadow: 0px 0px 40px #000; }
+}
+/* ------------------------------------------- */
+
+.wardit_header_square {
+	position: relative;
+	width: 70%;
+	height: 70%;
+	top: 15%;
+	left: 15%;
+	overflow: hidden;
+	box-shadow: 0px 0px 10px #000;
+	-webkit-transform: rotate(45deg) ;
+	-moz-transform:    rotate(45deg) ;
+	-o-transform:      rotate(45deg) ;
+	transform:         rotate(45deg) ;
+}
+
+.wit_header_slide_square_container_1{
+	width: 30%;
+	top: 41%;
+}
+
+.wardit_header_square_1{
+	background-color: #FCBD00;
+}
+
+.wit_header_slide_square_container_2{
+	width: 30%;
+	left: 15.4%;
+	top: 14%;
+}
+
+.wardit_header_square_2{
+	background-color: #680077;
+}
+
+.wit_header_slide_square_container_3{
+	width: 25%;
+	left: 17.5%;
+	z-index: 6;
+	top: 56%;
+}
+
+.wardit_header_square_3{
+	background-color: #E32B00;
+	cursor: pointer;
+}
+
+.wardit_header_square_3:hover{
+	background-color: #434245;
+}
+
+.wardit_header_square_3:hover > p{
+	color: #fff;
+}
+
+.wit_header_slide_square_container_4{
+	width: 30%;
+	left: 31%;
+	top: 41%;
+}
+
+.wardit_header_square_4{
+	background-color: #24B5A0;
+}
+
+.wit_header_slide_square_container_5{
+	width: 50%;
+	left: 35%;
+	z-index: 5;
+}
+
+.wardit_header_square_5{
+	background-color: #ECEFED;
+}
+
+.wit_header_slide_square_container_6{
+	width: 30%;
+	right: 0%;
+	top: 22%;
+}
+
+.wardit_header_square_6{
+	background-color: #F2005F;
+}
+
+.wit_header_slide_square_container_7{
+	width: 30%;
+	right: 10%;
+	z-index: 7;
+	top: 47%;
+}
+
+.wardit_header_square_7{
+	background-color: #6FD73A;
+}
+
+.wardit_top_square_image{
+	height: 80%;
+	width: 80%;
+	background-size: auto 100%;
+	border: 3px solid #434245;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin: 10% 10%;
+}
+
+.wardit_top_square_image_1{
+	background-image: url('../images/top_bar_1.jpg');
+}
+
+.wardit_top_square_image_2{
+	background-image: url('../images/top_bar_2.jpg');
+}
+
+.wardit_top_square_image_3{
+	background-image: url('../images/top_bar_3.jpg');
+}
+
+.wardit_top_square_image_4{
+	background-image: url('../images/top_bar_4.jpg');
+}
+
+.wardit_top_square_image_5{
+	background-image: url('../images/top_bar_5.jpg');
+}
+
+.wardit_top_square_image_6{
+	background-image: url('../images/top_bar_6.jpg');
+}
+
+.wardit_header_square_3 p{
+	font-size: 150%;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 31%;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform:    rotate(-45deg);
+	-o-transform:      rotate(-45deg);
+	transform:         rotate(-45deg);
+}
